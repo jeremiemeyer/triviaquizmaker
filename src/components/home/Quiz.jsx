@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import QuizQuestion from './QuizQuestion';
 import useQuizData from '@/hooks/useQuizData';
@@ -6,10 +5,6 @@ import spinner from '@/assets/spinner.svg';
 
 export default function Quiz() {
   const { quizData, isReadyToSubmit, isLoading } = useQuizData();
-
-  useEffect(() => {
-    console.log('consolelog', isReadyToSubmit);
-  }, [isReadyToSubmit]);
 
   return (
     <>
