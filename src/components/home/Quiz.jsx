@@ -28,9 +28,11 @@ export default function Quiz() {
 
           {isReadyToSubmit && (
             <>
-              <button className="mt-12 bg-blue-600 hover:bg-blue-500 rounded-md p-2 text-white">
-                <Link to="results">Submit</Link>
-              </button>
+              <Link to="results">
+                <button className="mt-12 bg-blue-600 hover:bg-blue-500 rounded-md p-2 text-white">
+                  Submit
+                </button>
+              </Link>
             </>
           )}
         </div>
