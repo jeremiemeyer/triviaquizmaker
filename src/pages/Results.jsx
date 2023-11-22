@@ -30,6 +30,7 @@ export default function Results() {
         </p>
       ) : (
         <>
+          <h1 className="uppercase font-bold text-xl">Results</h1>
           {quizData.map((question, index) => (
             <QuizQuestionResult key={index} questionData={question} />
           ))}
