@@ -14,7 +14,7 @@ export default function QuizSettings() {
       <div className="flex flex-col gap-2 sm:gap-0 sm:flex-row justify-center w-full">
         <select
           id="categorySelect"
-          className="border sm:border-y sm:border-l sm:rounded-l-xl p-2 border-r-6"
+          className="border rounded-none sm:border-y sm:border-l sm:rounded-l-xl p-2 border-r-6"
           placeholder="Select category"
           value={selectedOptions.categoryId}
           onChange={(e) =>

@@ -5,7 +5,7 @@ export default function AppLayout() {
   return (
     <>
       <Navbar />
-      <div className="mt-[60px]">
+      <div className="mt-[60px] w-full">
         <Outlet />
       </div>
     </>
