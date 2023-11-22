@@ -22,7 +22,6 @@ export const QuizDataProvider = ({ children }) => {
       const apiResponse = await axios.get(url);
       const data = apiResponse.data;
       const categories = data.trivia_categories;
-      console.log(categories);
       setCategoryOptions(categories);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -43,7 +42,6 @@ export const QuizDataProvider = ({ children }) => {
         correct_answer: he.decode(result.correct_answer),
         incorrect_answers: result.incorrect_answers.map(he.decode),
       }));
-      console.log('log:', results);
       setQuizData(convertApiResponseToQuizData(results));
       setIsLoading(false);
     } catch (error) {
